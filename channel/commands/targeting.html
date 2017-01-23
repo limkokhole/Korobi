@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    
+
+    
+    <title>Targeting commands | Korobi</title>
+    
+
+    <link rel="icon" href="https://korobi.io/favicon.ico" />
+    <link rel="author" type="text/plain" href="https://korobi.io/humans.txt" />
+    <link rel="stylesheet" href="https://korobi.io/assets/css/application.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+<body>
+<nav class="navigation" role="navigation">
+    <div class="navigation--inner">
+        <div class="navigation--brand-mobile">
+            <a href="https://korobi.io" class="navigation--brandlink navigation--brandlink-mobile">Korobi</a>
+        </div>
+        <div class="navigation--brand">
+            <a href="https://korobi.io" class="navigation--brandlink" role="menuitem">Korobi</a>
+            <i class="navigation--menutoggle fa fa-navicon"></i>
+        </div>
+        <ul class="navigation--links">
+            <li class=""><a href="https://korobi.io" role="menuitem">Home</a></li><li class=""><a href="https://korobi.io/networks/" role="menuitem">Networks</a></li><li class="external active"><a href="https://docs.korobi.io" role="menuitem">Docs <i class="fa fa-external-link"></i></a></li><li><a href="https://korobi.io/about/" role="menuitem">About</a></li>
+        </ul>
+        <ul class="navigation--links navigation--links-secondary">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    
+<!--googleoff: all-->
+<ul class="relbar">
+    <li><a href="../../index.html">Korobi 1.0.0-SNAPSHOT documentation</a> &raquo;</li>
+    <li><a href="../index.html" >Channel Management</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Channel Commands</a> &raquo;</li>
+</ul>
+<!--googleon: all-->
+<div class="docs">
+    <section>
+        
+  <div class="section" id="targeting-commands">
+<h1>Targeting commands<a class="headerlink" href="#targeting-commands" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the table below, a period is used as a placeholder channel command prefix. This will need to be changed if the
+channel you are targeting commands in uses a different prefix.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command prefix</th>
+<th class="head">Explanation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>.</td>
+<td>No user is targeted.</td>
+</tr>
+<tr class="row-odd"><td>.&gt;</td>
+<td>After the command name, a comma-separated list of users to target should be supplied. These users are pinged in the channel.</td>
+</tr>
+<tr class="row-even"><td>.&gt;&gt;</td>
+<td>After the command name, a comma-separated list of users to target should be supplied. These users are sent a notice.</td>
+</tr>
+<tr class="row-odd"><td>.&lt;</td>
+<td>Korobi will send you a notice with the channel contents in. Useful if you don&#8217;t want to spam the channel.</td>
+</tr>
+</tbody>
+</table>
+<p>For example, I could send the results of the <code class="code docutils literal"><span class="pre">.factions</span></code> command to users lol768 and Kashike in a notice by executing <code class="code docutils literal"><span class="pre">.&gt;&gt;factions</span> <span class="pre">lol768,Kashike</span></code>.</p>
+</div>
+
+
+    </section>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer--inner">
+        <div class="footer--copyright">
+            &copy; 2015-<span id="copyright-year">2016</span>, korobi.io team and contributors
+        </div>
+        <ul class="footer--links">
+            <li class="external"><a href="https://github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li><li class=""><a href="https://github.com/korobi/Korobi/commits/master" role="menuitem">Revisions <i class="fa fa-external-link"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<div id="bottom"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://korobi.io/assets/js/application.js"></script>
+<script>document.getElementById("copyright-year").innerHTML=(new Date().getFullYear());</script>
+</body>
+</html>
